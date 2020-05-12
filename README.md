@@ -15,21 +15,18 @@ pip install ComputerCommands
 ```python
 import ComputerCommands
 
-# Create an object that contains the local computer (replace 'Windows' with computers OS if different)
-computer = ComputerCommands.Computer('Windows')
-
 # Shutdown
-computer.shutdown()
+ComputerCommands.shutdown()
 
 # Reboot
-computer.reboot()
+ComputerCommands.reboot()
 
 # Sleep
-computer.sleep()
+ComputerCommands.sleep()
 
 # Logout
-computer.logout()
+ComputerCommands.logout()
 
 # Get computer IP address
-computer.ip_addr()
+ComputerCommands.ip_address()
 ```
