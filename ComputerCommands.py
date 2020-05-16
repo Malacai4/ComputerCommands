@@ -42,7 +42,7 @@ def ip_address():
     if OS == "Windows":
         hostname = socket.gethostname()
         ip = socket.gethostbyname(hostname)
-        return ip
+        return ip.strip()
 
     elif OS == "Linux":
         run = os.popen("hostname -I")
@@ -59,3 +59,6 @@ def ip_address():
         run = os.popen("ipconfig getifaddr en1")
         output = run.read()
         return output.strip()
+
+def operating_system():
+    return OS.strip()
