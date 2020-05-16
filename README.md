@@ -27,6 +27,9 @@ ComputerCommands.sleep()
 # Logout
 ComputerCommands.logout()
 
-# Get computer IP address
+# Get computer's IP address
 ComputerCommands.ip_address()
+
+# Get computer's operating system name
+ComputerCommands.operating_system()
 ```
